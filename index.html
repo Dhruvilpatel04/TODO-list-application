@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do CRUD Application</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <div id="navbar">
+      <a class="nav-link" href="login.html">Login</a>
+      <a class="nav-link" href="signup.html">Sign Up</a>
+    <h1>To-Do Application</h1>
+    <input type="text" id="search-input" placeholder="Search...">
+    <span class="filter-icon">&#x1F50E;</span>
+  </div>
+
+  <div id="content">
+    <div id="left-panel">
+      <h2>Add a To-Do</h2>
+      <form id="add-todo-form">
+        <input type="text" id="title-input" placeholder="Enter Title">
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <div id="right-panel">
+      <div id="todo-container"></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
